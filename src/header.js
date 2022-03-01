@@ -1,0 +1,28 @@
+import React from "react"
+import { NavLink } from "react-router-dom"
+
+function Header() {
+    return(
+        <nav>
+
+            <NavLink exact activeclassname="active" to="/pages/Login.js">
+                Login
+            </NavLink>
+
+            <NavLink exact activeclassname="active" to="/pages/Member.js">
+                Member
+            </NavLink>
+
+            <NavLink exact activeclassname="active" to="/pages/Paket.js">
+                Paket
+            </NavLink>
+
+            <NavLink exact activeclassname="active" to="/pages/User.js">
+                User
+            </NavLink>
+            
+        </nav>
+    )
+}
+
+export default Header
